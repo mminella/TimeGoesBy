@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time goes by</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link href="css/twentytwenty.css" rel="stylesheet" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+      font-family: 'Dancing Script', cursive;
+      color: white;
+      background-color: #CCD1D1;
+    }
+    #mainNav {
+      background-color: black;
+      maring-bottom: 10px;
+    }
+    #corner {
+      width: 700px;
+    }
+    #corner img {
+      width: 700px;  
+    }
+    #front {
+      width: 700px;
+    }
+    #front img {
+      width: 700px;  
+    }
+    .row {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+  <body>
+<nav id="mainNav" class="navbar navbar-default">
+  <div class="container">
+    <h1>As Time Goes By...</h1>
+  </div>
+</nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="corner" class="center-block twentytwenty-container">
+          <img src="img/beforeCorner.jpg" />
+          <img src="img/afterCorner.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="front" class="center-block twentytwenty-container">
+          <img src="img/beforeFront.jpg" />
+          <img src="img/afterFront.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+    $(window).load(function(){
+      $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({default_offset_pct: 0.7});
+    });
+    </script>
+  </body>
+</html>
